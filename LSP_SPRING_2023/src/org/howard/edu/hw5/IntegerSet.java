@@ -27,6 +27,7 @@ public class IntegerSet {
 	 * @author Justin
 	 *
 	 */
+	@SuppressWarnings("serial")
 	public class IntegerSetException extends Exception {
 		/**
 		 */
