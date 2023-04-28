@@ -24,6 +24,10 @@ class SongsDatabaseTest {
         assertFalse(pop_songs.contains("Bohemian Rhapsody"));
         assertFalse(rock_songs.contains("Bad Romance"));
         
+        System.out.println(db.getGenre("Bohemian Rhapsody"));
+        System.out.println(db.getGenre("Shape of You"));
+        System.out.println(db.getSongs("Pop"));
+        System.out.println(db.getSongs("Rock"));
       
     }
 
@@ -39,6 +43,8 @@ class SongsDatabaseTest {
         assertTrue(jazz_songs.contains("Take Five"));
         assertTrue(jazz_songs.contains("So What"));
         
+        System.out.println(db.getGenre("Mannish Boy"));
+        System.out.println(db.getGenre("So What"));
         System.out.println(db.getSongs("Jazz"));
         System.out.println(db.getSongs("Blues"));
     }
@@ -55,6 +61,8 @@ class SongsDatabaseTest {
         assertEquals("Country", db.getGenre("Jolene"));
         assertEquals("That song is not in the Database.", db.getGenre("Stairway to Heaven"));
         
+        System.out.println(db.getSongs("Classical"));
+        System.out.println(db.getSongs("Country"));
         System.out.println(db.getGenre("Ring of Fire"));
         System.out.println(db.getGenre("Moonlight Sonata"));
     }

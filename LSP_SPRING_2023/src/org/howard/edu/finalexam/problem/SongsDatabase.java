@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Custom song database class.
  * 
- * @author Justin
+ * @author Justin D
  */
 public class SongsDatabase {
     private HashMap<String, HashSet<String>> map = new HashMap<String, HashSet<String>>();
